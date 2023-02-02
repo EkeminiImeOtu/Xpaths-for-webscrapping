@@ -1,0 +1,28 @@
+------ Examples ------
+//label[text()='Email']/following-sibling::input[1]
+//td[text()='Maria Anders']/preceding-sibling::td/child::input
+//label[text()='Email']/following-sibling::input[1]/parent::div
+//div[@class='container']/child::input[@type='text']
+//div[@class='container']/descendant::button
+//div[@class='buttons']/ancestor-or-self::div
+//label[text()='Password']/following::input[1]
+
+------- Examples -------
+//td[text()=5000]
+//button[@id='refreshBtn' and @value='Refresh']
+//button[@id='refreshBtn' or @value='Refresh']
+//a[text()='Sign in']
+//a[contains(text(),'Sign')]
+//button[contains(@class,'sign')]
+//div[starts-with(@class,'container')]
+//label[normalize-space(text())='First Name']
+//ul[contains(@class,"pagination")]/li[not(./span)]
+//ul[contains(@class,"pagination")]/li[./span]/following-sibling::li[1]/a
+//ul[contains(@class,"pagination")]/li/span/../following-sibling::li/a
+//ul[@class="row product-grid-flex-row"]/li[position()>last()-36]//h2
+//button[@aria-label="Next Page"][not(@disabled)]
+=IF(VLOOKUP($L1,artvion,2,FALSE)=0,"",VLOOKUP($L1,artvion,2,FALSE))
+=$A$1&A2:A31
+=$B$2&A2:A1836&$C$2
+//table[contains(@class,"productDimensions")]//tr[.//p[text()="Package"]]
+.$ to the end instead of adding suffix
